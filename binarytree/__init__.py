@@ -218,13 +218,9 @@ class Node:
                 raise NodeTypeError("right child must be a Node instance")
 
         elif attr == _ATTR_VALUE:
-            if not isinstance(obj, _NODE_VAL_TYPES):
-                raise NodeValueError("node value must be a float/int/str")
             object.__setattr__(self, _ATTR_VAL, obj)
 
         elif attr == _ATTR_VAL:
-            if not isinstance(obj, _NODE_VAL_TYPES):
-                raise NodeValueError("node value must be a float/int/str")
             object.__setattr__(self, _ATTR_VALUE, obj)
 
         object.__setattr__(self, attr, obj)
