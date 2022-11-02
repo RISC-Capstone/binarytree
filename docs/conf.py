@@ -1,4 +1,4 @@
-project = "binarytree"
+project = "risc-binarytree"
 copyright = "2016-2021, Joohwan Oh"
 author = "Joohwan Oh"
 extensions = [

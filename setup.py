@@ -1,23 +1,15 @@
 from setuptools import find_packages, setup
 
-with open("README.md") as fp:
-    description = fp.read()
-
 setup(
-    name="binarytree",
-    description="Python Library for Studying Binary Trees",
-    long_description=description,
-    long_description_content_type="text/markdown",
-    author="Joohwan Oh",
-    author_email="joohwan.oh@outlook.com",
-    url="https://github.com/joowani/binarytree",
-    keywords=["tree", "heap", "bst", "education"],
+    name="risc-binarytree",
+    version="1.0.0",
+    author="e11i0t",
+    author_email="mpkarthick2002@gmail.com",
+    url="https://github.com/RISC-Capstone/risc-binarytree",
     packages=find_packages(exclude=["tests"]),
-    include_package_data=True,
+    include_package_data=True,  
     python_requires=">=3.7",
     license="MIT",
-    use_scm_version=True,
-    setup_requires=["setuptools_scm"],
     install_requires=[
         "graphviz",
         "setuptools>=60.8.2",

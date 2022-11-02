@@ -1,5 +1,5 @@
 [tool.coverage.run]
-omit = ["binarytree/version.py"]
+omit = ["risc-binarytree/version.py"]
 
 [tool.isort]
 profile = "black"
@@ -8,9 +8,6 @@ profile = "black"
 addopts = "-s -vv -p no:warnings"
 minversion = "6.0"
 testpaths = ["tests"]
-
-[tool.setuptools_scm]
-write_to = "binarytree/version.py"
 
 [tool.mypy]
 warn_return_any = true
